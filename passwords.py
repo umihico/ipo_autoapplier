@@ -2,9 +2,10 @@
 
 from passpacker import passwords
 
-nomura_ht = {
+nomura = {
     'branch_no': passwords['nomura_ht_branch_no'],
     'account_no': passwords['nomura_ht_account_no'],
-    'password': passwords['nomura_ht_password'], }
+    'password': passwords['nomura_ht_password'],
+    'deal_password': passwords['nomura_ht_torihiki'], }
 
-passwords = {"nomura_ht": nomura_ht}
+passwords = {"nomura": nomura}
