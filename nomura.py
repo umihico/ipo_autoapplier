@@ -1,6 +1,9 @@
 from umihico_commons.chrome_wrapper import Chrome
 from selenium.webdriver.common.keys import Keys
-from passwords import passwords
+try:
+    from passwords import passwords
+except (Exception, ) as e:
+    from .passwords import passwords
 
 
 def login(c):
